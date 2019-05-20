@@ -9,8 +9,9 @@ import video1 from '../../assets/videos/video1.png';
 import video2 from '../../assets/videos/video2.png';
 import video3 from '../../assets/videos/video3.png';
 
-const styles = theme => ({
+const styles = ({
   container: {
+    marginTop: 130,
     paddingTop: 68,
     paddingBottom: 46,
     backgroundColor: '#F5F5F5'
@@ -42,6 +43,9 @@ const styles = theme => ({
     margin: 0,
     fontSize: 18,
     fontWeight: 300
+  },
+  image: {
+    width: '100%'
   }
 });
 
@@ -70,7 +74,7 @@ const Videos = ({classes}) => (
               Aerokube is a small team of software developers.
             </Typography>
           </Grid>
-          <Grid item container xs={12}>
+          <Grid item container xs={12} spacing={24}>
             <Grid item xs={12} sm={5}>
               <Typography variant="body1" className={classes.paragraph}>
                 Aerokube is a small team of software developers. We are creating large scale software testing infrastructure for more than 6 years.
@@ -91,7 +95,7 @@ const Videos = ({classes}) => (
         <Grid container spacing={24}>
           {videos.map((video, index) => (
             <Grid key={index} item xs={12} sm={4}>
-              <img src={video.url} alt={video.title}/>
+              <img className={classes.image} src={video.url} alt={video.title}/>
             </Grid>
           ))}
         </Grid>
