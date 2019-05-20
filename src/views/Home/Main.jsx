@@ -16,16 +16,19 @@ const styles = theme => ({
     marginTop: 0,
     marginBottom: 12,
     color: '#1A0F2D',
+    textAlign: "center",
     [theme.breakpoints.down('sm')]: {
       fontSize: 34,
       textAlign: 'center'
     }
   },
   subheader: {
-    fontSize: 26,
+    color: "#6D6D7A",
+    fontSize: 18,
     lineHeight: '1.4em',
     fontWeight: 200,
     marginBottom: 20,
+    textAlign: "center",
     [theme.breakpoints.down('sm')]: {
       fontSize: 24,
       textAlign: 'center'
@@ -54,21 +57,21 @@ const styles = theme => ({
 
 const Main = ({ classes }) => (
   <Container>
-    <Grid container spacing={24} className={classes.root}>
-      <Grid item xs={12} sm={5} className={classes.logo}>
-        <Grid container>
-          <Grid item xs={12}>
-            <h1 className={classes.header}>Painless Selenium Testing</h1>
-            <h2 className={classes.subheader}>
-              Start testing in 1 minute.
-              <br />
-              Test times faster.
-            </h2>
-          </Grid>
-          <Grid item xs={12} className={classes.login}>
-            <p className={classes.trial}>Start 7 day free trial. No credit card required</p>
-          </Grid>
-        </Grid>
+    <Grid container spacing={24} className={classes.root} alignItems="center">
+      <Grid item xs={12}>
+        <h1 className={classes.header}>
+          Simple and extremely effective solutions
+          <br />
+          for your test infrastructure.
+        </h1>
+        <h2 className={classes.subheader}>
+          We use them in our everyday work and they are awesome!
+          <br />
+          Short way to efficient Selenium infrastructure
+        </h2>
+      </Grid>
+      <Grid item xs={12} className={classes.login}>
+        <p className={classes.trial}>Start 7 day free trial. No credit card required</p>
       </Grid>
     </Grid>
   </Container>
