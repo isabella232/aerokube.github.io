@@ -25,7 +25,7 @@ const styles = theme => ({
   subheader: {
     color: "#6D6D7A",
     fontSize: 18,
-    lineHeight: '1.4em',
+    lineHeight: '200%',
     fontWeight: 200,
     marginBottom: 20,
     textAlign: "center",
@@ -69,9 +69,6 @@ const Main = ({ classes }) => (
           <br />
           Short way to efficient Selenium infrastructure
         </h2>
-      </Grid>
-      <Grid item xs={12} className={classes.login}>
-        <p className={classes.trial}>Start 7 day free trial. No credit card required</p>
       </Grid>
     </Grid>
   </Container>

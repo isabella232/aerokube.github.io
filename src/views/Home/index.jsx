@@ -5,6 +5,7 @@ import { withStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 
 import Main from './Main';
+import Videos from './Videos';
 import Features from './Features';
 
 import Landing from '../../components/Landing';
@@ -46,6 +47,7 @@ const styles = theme => ({
 const Home = ({ classes }) => (
   <Landing className={classes.root} invert>
     <Main />
+    <Videos />
     <Features />
     <Footer>
       <Grid item xs={12}>
