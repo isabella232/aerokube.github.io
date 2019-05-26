@@ -1,13 +1,27 @@
 import React from 'react';
 import {withStyles} from '@material-ui/core/styles';
+import Grid from '@material-ui/core/Grid';
 
 const styles = {
   root: {
     width: '100%'
+  },
+  feature: {
+    height: 90,
+    border: '2px solid #D2D2D2',
+    padding: '42px 30px'
+  },
+  title: {
+    margin: 0,
+    fontSize: '26px'
+  },
+  description: {
+    margin: 0,
+    color: '#282828'
   }
 };
 
-const Features = ({classes}) => (
+const Features2 = ({classes}) => (
   <svg className={classes.root} width="1004" height="755" fill="none">
     <path d="M451 0v422.5c0 9.5-6.478 18.5-18.439 18.5H177.91c-15.947 0-26.91 13.4-26.91 27v85" stroke="url(#paint0_linear)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
     <path d="M551 3v419.5c0 9.5 6.5 18.5 18.5 18.5H824c16 0 27 13.4 27 27v85" stroke="url(#paint1_linear)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
@@ -78,7 +92,40 @@ const Features = ({classes}) => (
       </linearGradient>
     </defs>
   </svg>
+);
 
+const features = [
+  {
+    title: 'Selenoid',
+    description: 'Your company is using virtual machines',
+    color: '#338B93',
+    shadow: 'rgba(51, 139, 47, 0.35)'
+  },
+  {
+    title: 'Moon',
+    description: 'Your company is Kubernetes or Openshift',
+    color: '#264694',
+    shadow: 'rgba(38, 70, 148, 0.35)'
+  },
+  {
+    title: 'Browsers',
+    description: 'You need ready-to-use online solution',
+    color: '#6739B4',
+    shadow: 'rgba(137, 57, 180, 0.35)'
+  }
+];
+
+const Features = ({ classes }) => (
+  <Grid container spacing={24} justify="space-around">
+    {features.map((feature, index) => (
+      <Grid key={index} item xs={12} sm={3}>
+        <div className={classes.feature} style={{boxShadow: `0 0 12px ${feature.shadow}`}}>
+          <p className={classes.title} style={{color: feature.color}}>{feature.title}</p>
+          <p className={classes.description}>{feature.description}</p>
+        </div>
+      </Grid>
+    ))}
+  </Grid>
 );
 
 export default withStyles(styles)(Features);
