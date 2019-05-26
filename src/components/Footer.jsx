@@ -42,37 +42,37 @@ const leftButtons = [
     title: 'Aerokube'
   },
   {
-    href: 'https://aerokube.com',
+    href: 'https://browsers.aerokube.com',
     title: 'Browsers'
   },
   {
-    href: 'https://aerokube.com',
+    href: 'https://moon.aerokube.com',
     title: 'Moon'
   },
   {
-    href: 'https://aerokube.com',
+    href: 'https://selenoid.aerokube.com',
     title: 'Selenoid'
   }
 ];
 const rightButtons = [
   {
-    href: 'https://aerokube.com',
+    href: 'https://github.com',
     title: 'Github'
   },
   {
-    href: 'https://aerokube.com',
+    href: 'https://telegram.org',
     title: 'Telegram'
   },
   {
-    href: 'https://aerokube.com',
+    href: 'https://twitter.com',
     title: 'Twitter'
   },
   {
-    href: 'https://aerokube.com',
+    href: 'https://youtube.com',
     title: 'Youtube'
   },
   {
-    href: 'https://aerokube.com',
+    href: 'https://gmail.com',
     title: 'Mail us'
   }
 ];
