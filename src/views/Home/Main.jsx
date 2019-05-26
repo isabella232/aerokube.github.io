@@ -2,10 +2,9 @@ import React from 'react';
 import * as PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
-
 import Grid from '@material-ui/core/Grid';
-
 import Container from '../../components/Container';
+import Features from '../../components/Features';
 
 const styles = theme => ({
   root: {
@@ -49,6 +48,9 @@ const styles = theme => ({
       display: 'flex',
       justifyContent: 'space-between'
     }
+  },
+  image: {
+    textAlign: 'center'
   }
 });
 
@@ -66,6 +68,9 @@ const Main = ({ classes }) => (
           <br />
           Short way to efficient Selenium infrastructure
         </Typography>
+      </Grid>
+      <Grid item xs={12} className={classes.image}>
+        <Features />
       </Grid>
     </Grid>
   </Container>

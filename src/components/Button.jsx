@@ -5,13 +5,13 @@ import { withStyles } from '@material-ui/core/styles';
 const styles = {
   root: {
     textDecoration: 'none',
-    fontFamily: 'inherit',
-    color: 'rgba(255, 255, 255, 0.75)',
+    fontWeight: 500,
+    color: 'rgba(78, 78, 78, 0.75)',
     transition: 'color 0.2s, border-color 0.2s, background-color 0.2s',
     borderRadius: 4,
     borderColor: 'rgba(255, 255, 255, 0.75)',
     '&:hover': {
-      color: 'white',
+      color: '#1754ED',
       borderColor: 'white'
     }
   },
@@ -79,7 +79,7 @@ const Button = ({ borders, invert, active, disabled, classes, link, href, classN
   }
 
   return (
-      <a href={href} className={classNames.join(' ')}>
+      <a href={href} className={classNames.join(' ')} target="_blank" rel="noopener noreferrer">
         {children}
       </a>
   ); // eslint-disable-line

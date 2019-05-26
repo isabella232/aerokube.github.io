@@ -1,9 +1,7 @@
 import React from 'react';
 import * as PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
-
 import Grid from '@material-ui/core/Grid';
-
 import Container from './Container';
 import Button from './Button';
 
@@ -19,29 +17,96 @@ const styles = {
   bottom: {
     marginTop: 55
   },
-  border: {
-    height: 1,
-    backgroundColor: 'rgba(255, 255, 255, 0.1)'
-  },
   footer: {
-    height: 118,
-    color: 'rgba(255, 255, 255, 0.6)'
+    color: 'rgba(40, 40, 40, 0.9)',
+    marginBottom: 54
+  },
+  footerTopButton: {
+    color: 'rgba(40, 40, 40, 0.9)',
+    fontWeight: 600
   },
   footerButton: {
-    fontSize: '0.7em'
+    fontSize: '0.7em',
+    color: 'rgba(40, 40, 40, 0.9)'
+  },
+  spacer: {
+    height: 1,
+    margin: '25px 0 38px',
+    backgroundColor: 'rgba(0, 0, 0, 0.3)'
   }
 };
 
-const Footer = ({ classes, children, className, showDivider }) => (
+const leftButtons = [
+  {
+    href: 'https://aerokube.com',
+    title: 'Aerokube'
+  },
+  {
+    href: 'https://aerokube.com',
+    title: 'Browsers'
+  },
+  {
+    href: 'https://aerokube.com',
+    title: 'Moon'
+  },
+  {
+    href: 'https://aerokube.com',
+    title: 'Selenoid'
+  }
+];
+const rightButtons = [
+  {
+    href: 'https://aerokube.com',
+    title: 'Github'
+  },
+  {
+    href: 'https://aerokube.com',
+    title: 'Telegram'
+  },
+  {
+    href: 'https://aerokube.com',
+    title: 'Twitter'
+  },
+  {
+    href: 'https://aerokube.com',
+    title: 'Youtube'
+  },
+  {
+    href: 'https://aerokube.com',
+    title: 'Mail us'
+  }
+];
+
+const Footer = ({ classes, children, className }) => (
   <div className={[classes.root, className].filter(Boolean).join(' ')}>
     <Container>
       <Grid container spacing={0}>
         {children && <div className={classes.content}>{children}</div>}
-        {(children || showDivider) && (
-          <Grid item xs={12} className={classes.bottom}>
-            <div className={classes.border} />
+        <Grid container spacing={24} justify="space-between" alignItems="center">
+          <Grid container spacing={24} item sm justify="flex-start" alignItems="center">
+            {leftButtons.map(button => (
+              <Grid item key={button.href}>
+                <Button href={button.href} className={classes.footerTopButton}>
+                  {button.title}
+                </Button>
+              </Grid>
+            ))}
           </Grid>
-        )}
+          <Grid container spacing={24} item sm justify="flex-end" alignItems="center">
+            {rightButtons.map(button => (
+              <Grid item key={button.href}>
+                <Button href={button.href} className={classes.footerTopButton}>
+                  {button.title}
+                </Button>
+              </Grid>
+            ))}
+          </Grid>
+        </Grid>
+        <Grid item container spacing={24}>
+          <Grid item xs={12}>
+            <div className={classes.spacer} />
+          </Grid>
+        </Grid>
         <Grid item xs={12} container className={classes.footer} justify="space-between" alignItems="center">
           <Grid item>© 2019 Aerokube Software</Grid>
           <Grid item container xs={12} sm={6} spacing={24} justify="flex-end">
@@ -55,11 +120,6 @@ const Footer = ({ classes, children, className, showDivider }) => (
                 Privacy Policy
               </Button>
             </Grid>
-            <Grid item>
-              <Button link href="/docs/#_cookie_policy" className={classes.footerButton}>
-                Cookie Policy
-              </Button>
-            </Grid>
           </Grid>
         </Grid>
       </Grid>
@@ -70,7 +130,6 @@ const Footer = ({ classes, children, className, showDivider }) => (
 Footer.propTypes = {
   classes: PropTypes.object,
   children: PropTypes.any,
-  showDivider: PropTypes.bool,
   className: PropTypes.string
 };
 
