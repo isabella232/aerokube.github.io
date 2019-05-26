@@ -9,8 +9,6 @@ import Button from './Button';
 
 const styles = {
   root: {
-    background: 'linear-gradient(to bottom, #853ECD, #652FBE)',
-    color: 'white',
     boxSizing: 'border-box',
     textAlign: 'center'
   },

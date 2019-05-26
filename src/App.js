@@ -7,8 +7,19 @@ import deepOrange from '@material-ui/core/colors/deepOrange';
 const theme = createMuiTheme({
     typography: {
         useNextVariants: true,
-        fontSize: 14,
-        fontFamily: ['Ubuntu', 'sans-serif'].join(',')
+        fontSize: 18,
+        htmlFontSize: 18,
+        fontFamily: ['Ubuntu', 'sans-serif'].join(','),
+        h1: {
+            fontSize: '2.11em',
+            lineHeight: '138%',
+            color: '#282828'
+        },
+        h2: {
+            fontSize: '1rem',
+            lineHeight: '207%',
+            color: '#282828'
+        }
     },
     palette: {
         primary: deepPurple,
