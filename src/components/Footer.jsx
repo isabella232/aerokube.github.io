@@ -102,10 +102,8 @@ const Footer = ({ classes, children, className }) => (
             ))}
           </Grid>
         </Grid>
-        <Grid item container spacing={24}>
-          <Grid item xs={12}>
-            <div className={classes.spacer} />
-          </Grid>
+        <Grid item xs={12}>
+          <div className={classes.spacer} />
         </Grid>
         <Grid item xs={12} container className={classes.footer} justify="space-between" alignItems="center">
           <Grid item>© 2019 Aerokube Software</Grid>
