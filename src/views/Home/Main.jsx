@@ -23,7 +23,6 @@ const styles = theme => ({
   subheader: {
     lineHeight: '200%',
     fontWeight: 200,
-    marginBottom: 20,
     textAlign: "center",
     [theme.breakpoints.down('sm')]: {
       fontSize: 24,
