@@ -4,12 +4,10 @@ import Grid from '@material-ui/core/Grid';
 import Hidden from '@material-ui/core/Hidden';
 import pipes from '../assets/pipes.svg';
 
-const styles = {
-  root: {
-    width: '100%'
-  },
+const styles = ({
   feature: {
-    height: 90,
+    boxSizing: 'border-box',
+    height: 190,
     padding: '42px 30px'
   },
   title: {
@@ -18,6 +16,7 @@ const styles = {
   },
   description: {
     margin: 0,
+    lineHeight: '137%',
     color: '#282828'
   },
   pipes: {
@@ -26,8 +25,14 @@ const styles = {
     backgroundRepeat: 'no-repeat',
     backgroundPosition: 'center',
     marginBottom: -24
+  },
+  divider: {
+    height: 2,
+    margin: '12px 20px',
+    borderRadius: 2,
+    backgroundColor: 'rgba(40, 40, 40, 0.15)'
   }
-};
+});
 
 const features = [
   {
@@ -61,6 +66,7 @@ const Features = ({ classes }) => (
       <Grid key={index} item sm={12} md={3}>
         <div className={classes.feature} style={{boxShadow: `0 0 12px ${feature.shadow}`}}>
           <p className={classes.title} style={{color: feature.color}}>{feature.title}</p>
+          <div className={classes.divider} />
           <p className={classes.description}>{feature.description}</p>
         </div>
       </Grid>

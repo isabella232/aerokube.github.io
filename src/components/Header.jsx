@@ -58,7 +58,7 @@ const Header = ({ classes, className }) => (
         <Grid item xs sm={4}>
           <a href="/" className={classes.logoLink}>
             <img className={classes.logo} src={logo} alt="" />
-            <span className={classes.title}>Browsers</span>
+            <span className={classes.title}>Aerokube</span>
           </a>
         </Grid>
         <Hidden xsDown>

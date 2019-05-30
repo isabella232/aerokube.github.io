@@ -8,7 +8,10 @@ import Features from '../../components/Features';
 
 const styles = theme => ({
   root: {
-    marginTop: 80
+    marginTop: 80,
+    [theme.breakpoints.down('sm')]: {
+      marginTop: 75
+    }
   },
   header: {
     fontWeight: 700,
@@ -25,8 +28,10 @@ const styles = theme => ({
     fontWeight: 200,
     textAlign: "center",
     [theme.breakpoints.down('sm')]: {
-      fontSize: 24,
-      textAlign: 'center'
+      fontSize: 18,
+      textAlign: 'center',
+      marginTop: 40,
+      marginBottom: 30
     }
   },
   video: {
