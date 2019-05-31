@@ -86,7 +86,12 @@ nav li {
     line-height: 207%;
 }
 
+.hero__features {
+    justify-content: space-evenly;
+}
+
 .hero__feature {
+    display: inline-block;
     height: 190px;
     padding: 42px 30px;
     transition: background-color 0.3s, color 0.3s;
@@ -266,10 +271,6 @@ nav li {
         display: block;
     }
 
-    .hero__feature {
-        max-width: initial;
-    }
-
     .videos {
         margin-top: 23px;
     }
@@ -288,5 +289,13 @@ nav li {
     .footer__terms {
         margin-top: 24px;
         text-align: left;
+    }
+}
+
+@media (max-width: 992px) {
+    .hero__feature {
+        width: 100%;
+        max-width: initial;
+        height: inherit;
     }
 }
