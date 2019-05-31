@@ -9,21 +9,42 @@ a, a:hover {
     color: inherit;
 }
 
-a {
-    font-weight: 600;
-    transition: color 0.3s;
-}
-
 h1 {
     font-size: 2.111rem;
     line-height: 138%;
 }
 
-h2 {
+h3 {
     font-size: 1.44rem;
     line-height: 138%;
     font-weight: 400;
     margin-bottom: 24px;
+}
+
+h2 {
+
+}
+
+nav a {
+    color: rgba(78, 78, 78, 0.75);
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #1754ED;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    letter-spacing: 24px;
+}
+
+nav li {
+    display: inline-block;
+    letter-spacing: normal;
 }
 
 .header {
@@ -50,18 +71,8 @@ h2 {
     letter-spacing: 24px;
 }
 
-.header__links li {
-    display: inline-block;
-    letter-spacing: normal;
-}
-
-.header__links a {
-    color: rgba(78, 78, 78, 0.75);
-    font-weight: 400;
-}
-
-.header__links a:hover {
-    color: #1754ED;
+.header__links ul {
+    letter-spacing: 28px;
 }
 
 .hero {
@@ -146,7 +157,7 @@ h2 {
 }
 
 .videos {
-    margin-top: 130px;
+    margin-top: 103px;
 }
 
 .videos__title-wrapper {
@@ -179,8 +190,103 @@ h2 {
     font-weight: 300;
 }
 
+.videos__video img {
+    width: 100%;
+}
+
+.articles {
+    margin-top: 51px;
+}
+
+.articles__article {
+    border: 2px solid rgba(10, 34, 94, 0.19);
+    padding: 24px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.articles__articles {
+    margin-top: 32px;
+}
+
+.articles__article-title {
+    color: #1754ED;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.articles__article-description {
+    color: #6D6D7A;
+    margin: 16px 0 0;
+    font-weight: 300;
+}
+
+.footer {
+    margin-top: 113px;
+}
+
+.footer__left {
+    text-align: left;
+}
+
+.footer__right {
+    text-align: right;
+}
+
+.footer__separator {
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.3);
+    margin: 25px 15px 38px;
+}
+
+.footer__bottom {
+    margin-bottom: 50px;
+}
+
+.footer__terms {
+    text-align: right;
+    font-size: 0.78rem;
+    line-height: 1rem;
+}
+
+.footer nav a {
+    color: #282828;
+}
+
+.footer nav a:hover {
+    color: #1754ED;
+}
+
 @media (max-width: 576px) {
+    h1 {
+        font-size: 1.9rem;
+    }
+
+    nav li {
+        display: block;
+    }
+
     .hero__feature {
         max-width: initial;
+    }
+
+    .videos {
+        margin-top: 23px;
+    }
+
+    .footer__left {
+        font-size: 1.33rem;
+        line-height: 3rem;
+    }
+
+    .footer__right {
+        margin-top: 30px;
+        text-align: left;
+        line-height: 2rem;
+    }
+
+    .footer__terms {
+        margin-top: 24px;
+        text-align: left;
     }
 }

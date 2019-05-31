@@ -8,7 +8,10 @@ const styles = ({
   feature: {
     boxSizing: 'border-box',
     height: 190,
-    padding: '42px 30px'
+    padding: '42px 30px',
+    '&:hover title': {
+      color: 'white !important'
+    }
   },
   title: {
     margin: 0,
