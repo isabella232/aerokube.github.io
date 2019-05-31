@@ -126,15 +126,15 @@ nav li {
 }
 
 .hero__feature_browsers {
-    box-shadow: 0 0 12px rgba(51, 139, 47, 0.35);
+    box-shadow: 0 0 12px rgba(137, 57, 180, 0.35);
 }
 
 .hero__feature_browsers:hover {
-    background-color: #338B93;
+    background-color: #6739B4;
 }
 
 .hero__feature_browsers .hero__feature-title {
-    color: #338B93;
+    color: #6739B4;
 }
 
 .hero__feature_moon {
@@ -150,15 +150,15 @@ nav li {
 }
 
 .hero__feature_selenoid {
-    box-shadow: 0 0 12px rgba(137, 57, 180, 0.35);
+    box-shadow: 0 0 12px rgba(51, 139, 47, 0.35);
 }
 
 .hero__feature_selenoid:hover {
-    background-color: #6739B4;
+    background-color: #338B93;
 }
 
 .hero__feature_selenoid .hero__feature-title {
-    color: #6739B4;
+    color: #338B93;
 }
 
 .videos {
