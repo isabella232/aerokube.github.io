@@ -1,0 +1,186 @@
+html, body {
+    font-family: 'Ubuntu', sans-serif;
+    color: #282828;
+    font-size: 18px;
+}
+
+a, a:hover {
+    text-decoration: none;
+    color: inherit;
+}
+
+a {
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+h1 {
+    font-size: 2.111rem;
+    line-height: 138%;
+}
+
+h2 {
+    font-size: 1.44rem;
+    line-height: 138%;
+    font-weight: 400;
+    margin-bottom: 24px;
+}
+
+.header {
+    height: 80px;
+}
+
+.header__logo-image {
+    width: 40px;
+    height: 40px;
+    vertical-align: middle;
+}
+
+.header__logo-title {
+    vertical-align: middle;
+    margin-left: 18px;
+}
+
+.header__links {
+    list-style-type: none;
+    text-align: right;
+    margin: 0;
+    height: 40px;
+    line-height: 40px;
+    letter-spacing: 24px;
+}
+
+.header__links li {
+    display: inline-block;
+    letter-spacing: normal;
+}
+
+.header__links a {
+    color: rgba(78, 78, 78, 0.75);
+    font-weight: 400;
+}
+
+.header__links a:hover {
+    color: #1754ED;
+}
+
+.hero {
+    margin-top: 75px;
+}
+
+.hero__heading-description {
+    margin-top: 24px;
+    color: #6D6D7A;
+    font-weight: 300;
+    line-height: 207%;
+}
+
+.hero__feature {
+    height: 190px;
+    padding: 42px 30px;
+    transition: background-color 0.3s, color 0.3s;
+    max-width: 280px;
+}
+
+.hero__feature:hover, .hero__feature:hover .hero__feature-title {
+    color: white;
+}
+
+.hero__feature:hover .hero__feature-divider {
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+.hero__feature-title {
+    font-size: 1.44rem;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.hero__feature-divider {
+    height: 2px;
+    margin: 12px 20px;
+    background-color: rgba(40, 40, 40, 0.15);
+    border-radius: 2px;
+    transition: background-color 0.3s;
+}
+
+.hero__feature-description {
+    line-height: 138%;
+    font-weight: 300;
+}
+
+.hero__feature_browsers {
+    box-shadow: 0 0 12px rgba(51, 139, 47, 0.35);
+}
+
+.hero__feature_browsers:hover {
+    background-color: #338B93;
+}
+
+.hero__feature_browsers .hero__feature-title {
+    color: #338B93;
+}
+
+.hero__feature_moon {
+    box-shadow: 0 0 12px rgba(38, 70, 148, 0.35);
+}
+
+.hero__feature_moon:hover {
+    background-color: #264694;
+}
+
+.hero__feature_moon .hero__feature-title {
+    color: #264694;
+}
+
+.hero__feature_selenoid {
+    box-shadow: 0 0 12px rgba(137, 57, 180, 0.35);
+}
+
+.hero__feature_selenoid:hover {
+    background-color: #6739B4;
+}
+
+.hero__feature_selenoid .hero__feature-title {
+    color: #6739B4;
+}
+
+.videos {
+    margin-top: 130px;
+}
+
+.videos__title-wrapper {
+    padding-top: 68px;
+    padding-bottom: 46px;
+    background-color: #F5F5F5;
+}
+
+.videos__half-container {
+    position: relative;
+}
+
+.videos__half-container::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    left: 0;
+    top: 0;
+    background-color: #F5F5F5;
+    z-index: 1;
+}
+
+.videos__video-wrapper {
+    position: relative;
+    z-index: 2;
+}
+
+.videos__content {
+    font-weight: 300;
+}
+
+@media (max-width: 576px) {
+    .hero__feature {
+        max-width: initial;
+    }
+}
