@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="{{ $.Site.Language.Lang }}">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <base href="{{ if getenv "CONTEXT" }}{{ cond (eq "production" (getenv "CONTEXT")) (getenv "URL") (getenv "DEPLOY_PRIME_URL") }}{{ else }}{{ $.Site.BaseURL }}{{ end }}">
+  <title>{{ $.Site.Title }}</title>
+
+  {{ $stylesheet := .Site.Data.webpack.main }}
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  {{ with $stylesheet.css }}
+    <link href="{{ relURL . }}" rel="stylesheet">
+  {{ end }}
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700" rel="stylesheet">
+</head>
+
+<body>
+
+  {{ block "header" . }}{{ partial "header" . }}{{end}}
+
+  {{ block "main" . }}{{end}}
+
+  {{ block "footer" . }}{{ partial "footer" . }}{{end}}
+
+  {{ $script := .Site.Data.webpack.main }}
+  {{ with $script.js }}
+    <script src="{{ relURL . }}"></script>
+  {{ end }}
+</body>
+
+</html>

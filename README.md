@@ -1,68 +1,116 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Victor Hugo
 
-## Available Scripts
+**A Hugo boilerplate for creating truly epic websites**
 
-In the project directory, you can run:
+This is a boilerplate for using [Hugo](https://gohugo.io/) as a static site generator and [Webpack](https://webpack.js.org/) as your asset pipeline.
 
-### `npm start`
+Victor Hugo setup to use [PostCSS](http://postcss.org/) and [Babel](https://babeljs.io/) for CSS and JavaScript compiling/transpiling.
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+This project is released under the [MIT license](LICENSE). Please make sure you understand its implications and guarantees.
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+## Usage
 
-### `npm test`
+### :exclamation: Prerequisites
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+You need to have the latest/LTS [node](https://nodejs.org/en/download/) and [npm](https://www.npmjs.com/get-npm) versions installed in order to use Victor Hugo.
 
-### `npm run build`
+Next step, clone this repository and run:
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```bash
+npm install
+```
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+This will take some time and will install all packages necessary to run Victor Hugo and its tasks.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### :construction_worker: Development
 
-### `npm run eject`
+While developing your website, use:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+```bash
+npm start
+```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+or for developing your website with `hugo server --buildDrafts --buildFuture`, use:
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+```bash
+npm run preview
+```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Then visit http://localhost:3000/ _- or a new browser windows popped-up already -_ to preview your new website. Webpack Dev Server will automatically reload the CSS or refresh the whole page, when stylesheets or content changes.
 
-## Learn More
+### :package: Static build
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+To build a static version of the website inside the `/dist` folder, run:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```bash
+npm run build
+```
 
-### Code Splitting
+To get a preview of posts or articles not yet published, run:
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+```bash
+npm run build:preview
+```
 
-### Analyzing the Bundle Size
+See [package.json](package.json#L8) for all tasks.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+## Structure
 
-### Making a Progressive Web App
+```
+|--site                // Everything in here will be built with hugo
+|  |--content          // Pages and collections - ask if you need extra pages
+|  |--data             // YAML data files with any data for use in examples
+|  |--layouts          // This is where all templates go
+|  |  |--partials      // This is where includes live
+|  |  |--index.html    // The index page
+|  |--static           // Files in here ends up in the public folder
+|--src                 // Files that will pass through the asset pipeline
+|  |--css              // Webpack will bundle imported css seperately
+|  |--index.js         // index.js is the webpack entry for your css & js assets
+```
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+## Basic Concepts
 
-### Advanced Configuration
+You can read more about Hugo's template language in their documentation here:
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+https://gohugo.io/templates/overview/
 
-### Deployment
+The most useful page there is the one about the available functions:
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+https://gohugo.io/templates/functions/
 
-### `npm run build` fails to minify
+For assets that are completely static and don't need to go through the asset pipeline,
+use the `site/static` folder. Images, font-files, etc, all go there.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+Files in the static folder end up in the web root. So a file called `site/static/favicon.ico`
+will end up being available as `/favicon.ico` and so on...
+
+The `src/index.js` file is the entrypoint for webpack and will be built to `/dist/main.js`
+
+You can use **ES6** and use both relative imports or import libraries from npm.
+
+Any CSS file imported into the `index.js` will be run through Webpack, compiled with [PostCSS Next](http://cssnext.io/), and
+minified to `/dist/[name].[hash:5].css`. Import statements will be resolved as part of the build.
+
+## Environment variables
+
+To separate the development and production _- aka build -_ stages, all gulp tasks run with a node environment variable named either `development` or `production`.
+
+You can access the environment variable inside the theme files with `getenv "NODE_ENV"`. See the following example for a conditional statement:
+
+    {{ if eq (getenv "NODE_ENV") "development" }}You're in development!{{ end }}
+
+All tasks starting with _build_ set the environment variable to `production` - the other will set it to `development`.
+
+## Deploying to Netlify
+
+- Push your clone to your own GitHub repository.
+- [Create a new site on Netlify](https://app.netlify.com/start) and link the repository.
+
+Now Netlify will build and deploy your site whenever you push to git.
+
+You can also click this button:
+
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/netlify/victor-hugo)
+
+## Enjoy!! 😸

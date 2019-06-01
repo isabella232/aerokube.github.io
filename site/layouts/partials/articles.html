@@ -1,0 +1,19 @@
+<div class="container articles">
+    <div class="row">
+        <div class="col">
+            <h2>Articles</h2>
+        </div>
+    </div>
+    <div class="row articles__articles">
+        {{ range $index, $element := where .Data.Pages "Section" "articles" }}
+        <div class="col-12 col-md-4 mb-4">
+            <div class="articles__article">
+                <a href="{{ .Permalink }}"><h3 class="articles__article-title">{{ .Title }}</h3></a>
+                <p class="articles__article-description">
+                    {{ .Description }}
+                </p>
+            </div>
+        </div>
+        {{ end }}
+    </div>
+</div>

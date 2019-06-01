@@ -1,0 +1,56 @@
+{
+  "social": [
+    {
+      "name": "Github",
+      "url": "https://github.com"
+    },
+    {
+      "name": "Telegram",
+      "url": "https://telegram.org"
+    },
+    {
+      "name": "Twitter",
+      "url": "https://twitter.com"
+    },
+    {
+      "name": "Youtube",
+      "url": "https://youtube.com"
+    },
+    {
+      "name": "Mail us",
+      "url": "mailto:support@aerokube.com"
+    }
+  ],
+  "verticals": [
+    {
+      "name": "Aerokube",
+      "url": "https://github.com"
+    },
+    {
+      "name": "Browsers",
+      "url": "https://telegram.org"
+    },
+    {
+      "name": "Moon",
+      "url": "https://twitter.com"
+    },
+    {
+      "name": "Selenoid",
+      "url": "https://youtube.com"
+    }
+  ],
+  "videos": [
+    {
+      "image": "images/videos/video1.png",
+      "url": "https://youtube.com"
+    },
+    {
+      "image": "images/videos/video2.png",
+      "url": "https://youtube.com"
+    },
+    {
+      "image": "images/videos/video3.png",
+      "url": "https://youtube.com"
+    }
+  ]
+}

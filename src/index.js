@@ -1,12 +1,6 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+// JS Goes here - ES6 supported
 
-ReactDOM.render(<App />, document.getElementById('root'));
+import "./css/main.css";
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+// Say hello
+console.log("🦊 Hello! Edit me in src/index.js");
