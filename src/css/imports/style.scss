@@ -27,7 +27,7 @@ h2 {
 
 nav a {
     color: rgba(78, 78, 78, 0.75);
-    font-weight: 600;
+    font-weight: 500;
     transition: color 0.3s;
 }
 
@@ -58,6 +58,9 @@ nav li {
         }
 
         &-title {
+            font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+            font-weight: bold;
+            color: rgba(0, 0, 0, 0.8);
             vertical-align: middle;
             margin-left: 18px;
         }
