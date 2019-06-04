@@ -2,19 +2,19 @@
   "social": [
     {
       "name": "Github",
-      "url": "https://github.com"
+      "url": "https://github.com/aerokube"
     },
     {
       "name": "Telegram",
-      "url": "https://telegram.org"
+      "url": "https://t.me/aerokube"
     },
     {
       "name": "Twitter",
-      "url": "https://twitter.com"
+      "url": "https://twitter.com/aerokube"
     },
     {
       "name": "Youtube",
-      "url": "https://youtube.com"
+      "url": "https://www.youtube.com/channel/UC9HvE3FNfTvftzpvXi9c69g"
     },
     {
       "name": "Mail us",
@@ -24,19 +24,19 @@
   "verticals": [
     {
       "name": "Aerokube",
-      "url": "https://github.com"
+      "url": "https://aerokube.com/"
     },
     {
       "name": "Browsers",
-      "url": "https://telegram.org"
+      "url": "https://browsers.aerokube.com/"
     },
     {
       "name": "Moon",
-      "url": "https://twitter.com"
+      "url": "https://moon.aerokube.com/"
     },
     {
       "name": "Selenoid",
-      "url": "https://youtube.com"
+      "url": "https://selenoid.aerokube.com/"
     }
   ],
   "videos": [
