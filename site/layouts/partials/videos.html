@@ -26,7 +26,7 @@
                 {{ range .Site.Data.meta.videos }}
                 <div class="col-12 col-md-4 mb-4 videos__video">
                     <a href="{{ .url }}" target="_blank" rel="noopener noreferrer">
-                        <img src="{{ .image }}" alt="video 1">
+                        <img src="{{ .image }}" alt="{{ .description }}" title="{{ .description }}">
                     </a>
                 </div>
                 {{ end }}
