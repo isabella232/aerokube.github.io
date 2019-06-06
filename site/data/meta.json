@@ -41,16 +41,86 @@
   ],
   "videos": [
     {
-      "image": "images/videos/video1.png",
+      "image": "images/videos/selenoid.png",
+      "description": "Selenoid Videos",
+      "url": "https://www.youtube.com/playlist?list=PLW7WVf1LXeWrCBv_48hOR-eWtshGBet9a"
+    },
+    {
+      "image": "images/videos/moon.png",
+      "description": "Moon Videos",
+      "url": "https://www.youtube.com/playlist?list=PLW7WVf1LXeWpQZRFJbpPKbUQJQ--VVF9z"
+    },
+    {
+      "image": "images/videos/conferences.png",
+      "description": "Conference Talks",
+      "url": "https://www.youtube.com/playlist?list=PLW7WVf1LXeWqfYICAtbHL4KmWnAntzLBG"
+    }
+  ],
+  "articles": [
+    {
+      "title": "Selenium: a new hope (part I)",
+      "description": "In this article we describe standard Selenium scalability problems and their efficient solutions",
+      "url": "https://medium.com/@aandryashin/selenium-testing-a-new-hope-7fa87a501ee9"
+    },
+    {
+      "title": "Selenium: a new hope (part II)",
+      "description": "In this article we introduce lightning fast Selenoid server and Ggr load balancer",
       "url": "https://youtube.com"
     },
     {
-      "image": "images/videos/video2.png",
-      "url": "https://youtube.com"
+      "title": "Selenium: done in 60 seconds",
+      "description": "In this article we demonstrate how to obtain a running Selenoid instance in 60 seconds",
+      "url": "https://medium.com/@aandryashin/selenium-done-in-60-seconds-176796f8bdc7"
     },
     {
-      "image": "images/videos/video3.png",
-      "url": "https://youtube.com"
+      "title": "Selenium on Windows: revisited",
+      "description": "Our first recommendations about efficient Selenium testing on Windows platform",
+      "url": "https://medium.com/@aandryashin/selenium-on-windows-revisited-1ab8d51ccc06"
+    },
+    {
+      "title": "Selenium: easy as a pie",
+      "description": "In this article we are showing Selenoid UI and fully automated installer called CM",
+      "url": "https://medium.com/@aandryashin/selenium-easy-as-a-pie-df8b5876b541"
+    },
+    {
+      "title": "Selenium: an Apple story",
+      "description": "In this article we apply Selenoid power to MacOS platform and testing in Safari desktop",
+      "url": "https://medium.com/@aandryashin/selenium-an-apple-story-ab0c0b68cd35"
+    },
+    {
+      "title": "Selenium: Growing Muscles",
+      "description": "This article shows some advanced Selenoid and Ggr features like video recording and new capabilities",
+      "url": "https://medium.com/@ivan_krutov/selenium-growing-muscles-9df57ee77a3a"
+    },
+    {
+      "title": "Selenium: Clear as a Bell",
+      "description": "Take a look if you need to browser consumption charts or session logs uploaded to the ELK stack",
+      "url": "https://medium.com/@aandryashin/selenium-clear-as-a-bell-64b672f42689"
+    },
+    {
+      "title": "Selenium: Back to the Moon",
+      "description": "The first introduction of Moon - an implementation of Selenium protocol for Kubernetes cluster",
+      "url": "https://medium.com/@aandryashin/selenium-back-to-the-moon-6ea73f1657cc"
+    },
+    {
+      "title": "Selenium: Storing Data Efficiently",
+      "description": "A step by step instruction how to configure Selenoid to upload recorded videos and session logs to S3 bucket",
+      "url": "https://medium.com/@aandryashin/selenium-more-android-sweets-3839148d1bac"
+    },
+    {
+      "title": "Selenium: Exploring the Moon",
+      "description": "A deep dive into Moon architecture, browser pod internals and some advanced features like using Kubernetes node selectors",
+      "url": "http://medium.com/@aandryashin/selenium-exploring-the-moon-b7402936cafe"
+    },
+    {
+      "title": "Selenium on Windows: Docker Revolution",
+      "description": "This article solves the problem of the century - how to pack Windows-only browsers to Linux Docker containers",
+      "url": "https://medium.com/@aandryashin/selenium-on-windows-docker-revolution-f5a7eab205ad"
+    },
+    {
+      "title": "Selenium: Reflections about Cluster Economics",
+      "description": "This article gives our calculations about real Selenium cluster cost in cloud platforms like AWS",
+      "url": "http://medium.com/@aandryashin/selenium-reflections-about-cluster-economics-8a7ce6d6b193"
     }
   ]
 }
