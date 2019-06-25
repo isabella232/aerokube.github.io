@@ -1,0 +1,42 @@
+clone:
+  git:
+    image: plugins/git
+    branch: origin
+    tags: true
+
+pipeline:
+
+  build:
+    image: node:12-alpine
+    commands:
+      - npm install
+      - npm run build
+    when:
+      event: [push, tag, pull_request]
+
+  aerokube_website_latest_image:
+    image: plugins/docker
+    registry: registry.aerokube.com
+    repo: registry.aerokube.com/aerokube/website
+    secrets: [ docker_username, docker_password ]
+    tags: [ 'latest' ]
+    when:
+      branch: master
+      event: push
+
+  selenoid_website_release_image:
+    image: plugins/docker
+    registry: registry.aerokube.com
+    repo: registry.aerokube.com/aerokube/website
+    secrets: [ docker_username, docker_password ]
+    tags: [ '${DRONE_TAG}', 'latest-release' ]
+    when:
+      event: tag
+
+  aerokube_website_push:
+    image: golang:1.12.5
+    commands:
+      - ./deploy.sh
+    secrets: [ github_token ]
+    when:
+      event: [tag]
