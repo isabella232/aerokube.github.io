@@ -21,10 +21,10 @@ pipeline:
     secrets: [ docker_username, docker_password ]
     tags: [ 'latest' ]
     when:
-      branch: master
+      branch: origin
       event: push
 
-  selenoid_website_release_image:
+  aerokube_website_release_image:
     image: plugins/docker
     registry: registry.aerokube.com
     repo: registry.aerokube.com/aerokube/website
