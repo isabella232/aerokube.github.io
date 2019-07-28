@@ -9,3 +9,6 @@ enableRobotsTXT = true
 # See configuration options for more details:
 # https://gohugo.io/getting-started/configuration/#toml-configuration
 disableKinds = ["RSS", "taxonomy", "taxonomyTerm"]
+
+[params]
+description = "We deliver lightning fast and efficient Selenium testing infrastructure: Selenoid for Docker, Moon for Kubernetes and Browsers - online Selenium platform"

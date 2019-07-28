@@ -22,7 +22,7 @@
   <meta property="og:image:width" content="2113">
   {{ $title := .Title | default .Site.Title }}
   <meta property="og:title" content="{{ $title }}">
-  {{ $description := .Description }}
+  {{ $description := .Description | default .Site.Params.description }}
   {{ if .IsPage }}
   {{ $description = .Summary | plainify }}
   {{ end }}
