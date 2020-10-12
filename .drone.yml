@@ -14,25 +14,6 @@ pipeline:
     when:
       event: [push, tag, pull_request]
 
-  aerokube_website_latest_image:
-    image: plugins/docker
-    registry: registry.aerokube.com
-    repo: registry.aerokube.com/aerokube/website
-    secrets: [ docker_username, docker_password ]
-    tags: [ 'latest' ]
-    when:
-      branch: origin
-      event: push
-
-  aerokube_website_release_image:
-    image: plugins/docker
-    registry: registry.aerokube.com
-    repo: registry.aerokube.com/aerokube/website
-    secrets: [ docker_username, docker_password ]
-    tags: [ '${DRONE_TAG}', 'latest-release' ]
-    when:
-      event: tag
-
   aerokube_website_push:
     image: golang:1.12.5
     commands:
