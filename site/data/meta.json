@@ -41,17 +41,17 @@
   ],
   "videos": [
     {
-      "image": "images/videos/selenoid.png",
+      "image": "img/videos/selenoid.png",
       "description": "Selenoid Videos",
       "url": "https://www.youtube.com/playlist?list=PLW7WVf1LXeWrCBv_48hOR-eWtshGBet9a"
     },
     {
-      "image": "images/videos/moon.png",
+      "image": "img/videos/moon.png",
       "description": "Moon Videos",
       "url": "https://www.youtube.com/playlist?list=PLW7WVf1LXeWpQZRFJbpPKbUQJQ--VVF9z"
     },
     {
-      "image": "images/videos/conferences.png",
+      "image": "img/videos/conferences.png",
       "description": "Conference Talks",
       "url": "https://www.youtube.com/playlist?list=PLW7WVf1LXeWqfYICAtbHL4KmWnAntzLBG"
     }
