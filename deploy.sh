@@ -2,6 +2,7 @@
 
 git config user.name "${GITHUB_REPOSITORY}"
 git config user.email "aerokube@aerokube.github.com"
+git fetch origin
 git checkout master
 cp -R dist/* .
 git add --all
