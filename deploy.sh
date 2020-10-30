@@ -1,13 +1,13 @@
 #!/bin/bash
 
 WD=$(pwd)
-CLONE_DIR="/go/website"
+CLONE_DIR="${GITHUB_WORKSPACE}/website"
 git clone https://${GITHUB_TOKEN}@github.com/aerokube/aerokube.github.io.git ${CLONE_DIR}
 cd ${CLONE_DIR}
-git config user.name ${DRONE_COMMIT_AUTHOR}
-git config user.email ${DRONE_COMMIT_AUTHOR_EMAIL}
+git config user.name "${GITHUB_REPOSITORY}"
+git config user.email "aerokube@aerokube.github.com"
 git checkout master
 cp -R ${WD}/dist/* ${CLONE_DIR}
 git add --all
-git commit -am "Updated by ${DRONE_COMMIT_AUTHOR}"
+git commit -am "Publishing to gh-pages"
 git push origin HEAD:master
