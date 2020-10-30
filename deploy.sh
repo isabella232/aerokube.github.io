@@ -4,6 +4,8 @@ git config user.name "${GITHUB_REPOSITORY}"
 git config user.email "aerokube@aerokube.github.com"
 git fetch origin
 git checkout master
+git rm main.*.css
+git rm main.*.js
 cp -R dist/* .
 git add --all
 git commit -am "Publishing to master"
