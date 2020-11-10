@@ -1,4 +1,4 @@
-const { merge } = require("webpack-merge");
+const {merge} = require("webpack-merge");
 const path = require("path");
 const {CleanWebpackPlugin} = require("clean-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
@@ -7,6 +7,16 @@ const common = require("./webpack.common");
 
 module.exports = merge(common, {
   mode: "development",
+
+  module: {
+    rules: [
+      {
+        test: /\.(sa|sc|c)ss$/,
+        exclude: /node_modules/,
+        use: ["style-loader", "css-loader", "postcss-loader", "sass-loader"]
+      }
+    ]
+  },
 
   output: {
     filename: "[name].js",
