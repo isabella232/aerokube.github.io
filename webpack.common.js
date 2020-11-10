@@ -1,7 +1,6 @@
 const webpack = require("webpack");
 const path = require("path");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const AssetsPlugin = require("assets-webpack-plugin");
 
 module.exports = {
@@ -23,16 +22,14 @@ module.exports = {
       {test: /\.json$/, loader: "json-loader"},
 
       {
-        loader: "babel-loader",
         test: /\.js?$/,
         exclude: /node_modules/,
-        query: {cacheDirectory: true}
-      },
-
-      {
-        test: /\.(sa|sc|c)ss$/,
-        exclude: /node_modules/,
-        use: ["style-loader", MiniCssExtractPlugin.loader, "css-loader", "postcss-loader", "sass-loader"]
+        use: {
+          loader: "babel-loader",
+          options: {
+            cacheDirectory: true
+          }
+        },
       }
     ]
   },
