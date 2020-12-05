@@ -16,7 +16,7 @@
     "build:preview": "npm run build:webpack && npm run build:hugo:preview",
     "build:hugo": "HUGO_BASEURL=https://aerokube.com/ hugo -d ../dist -s site -v",
     "build:hugo:preview": "npm run build:hugo -- -D -F",
-    "build:webpack": "cross-env NODE_ENV=production webpack --config webpack.prod.js --hot --inline"
+    "build:webpack": "cross-env NODE_ENV=production webpack --config webpack.prod.js --hot --devtool inline-"
   },
   "author": "",
   "license": "MIT",
@@ -54,7 +54,7 @@
     "uglifyjs-webpack-plugin": "^2.2.0",
     "url-loader": "^4.1.1",
     "webpack": "^4.44.2",
-    "webpack-cli": "^3.3.12",
+    "webpack-cli": "^4.2.0",
     "webpack-dev-server": "^3.11.0",
     "webpack-merge": "^5.4.0",
     "whatwg-fetch": "^3.5.0"
