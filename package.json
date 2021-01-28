@@ -7,7 +7,7 @@
     "lint": "eslint src",
     "start": "run-p start:**",
     "start:hugo": "hugo -d ../dist -s site -vw",
-    "start:webpack": "webpack-dev-server --config webpack.dev.js",
+    "start:webpack": "webpack serve --config webpack.dev.js",
     "preview": "run-p preview:**",
     "preview:hugo": "npm run start:hugo -- -D -F",
     "preview:webpack": "npm run start:webpack",
@@ -55,7 +55,7 @@
     "url-loader": "^4.1.1",
     "webpack": "^4.44.2",
     "webpack-cli": "^4.3.1",
-    "webpack-dev-server": "^3.11.0",
+    "webpack-dev-server": "^3.11.2",
     "webpack-merge": "^5.4.0",
     "whatwg-fetch": "^3.5.0"
   },
