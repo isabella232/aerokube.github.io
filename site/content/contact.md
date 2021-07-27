@@ -19,4 +19,3 @@ title: "Aerokube | Contact Information"
 
 * General Support: https://t.me/aerokube
 * Moon Support: https://t.me/aerokube_moon
-* Browsers Support: https://t.me/aerokube_browsers
