@@ -62,89 +62,94 @@
   ],
   "articles": [
     {
+      "title": "Cypress: Remote Tests Execution Made Simple",
+      "description": "This article describes how to run your Cypress tests in parallel with Moon.",
+      "url": "https://blog.aerokube.com/cypress-remote-tests-execution-made-simple-f17645c2b682"
+    },
+    {
       "title": "Selenium Grid 4: Do you really need it?",
       "description": "This article describes what are the main components of Selenium Grid 4 and how Moon differs from it.",
-      "url": "https://aandryashin.medium.com/selenium-grid-4-do-you-really-need-it-ab03366625b0"
+      "url": "https://blog.aerokube.com/selenium-grid-4-do-you-really-need-it-ab03366625b0"
     },
     {
       "title": "Selenium: Lightning Fast Mobile Emulation in Kubernetes",
       "description": "This article describes how mobile emulation in Chrome browser can save you a lot of time and money.",
-      "url": "https://aandryashin.medium.com/selenium-lightning-fast-mobile-emulation-in-kubernetes-e41140cd6f54"
+      "url": "https://blog.aerokube.com/selenium-lightning-fast-mobile-emulation-in-kubernetes-e41140cd6f54"
     },
     {
       "title": "Browser Automation: How an efficient Selenium Cloud Platform should look like in 2020",
       "description": "This article gives more details about Moon Cloud solution.",
-      "url": "https://aandryashin.medium.com/browser-automation-how-an-efficient-selenium-cloud-platform-should-look-like-in-2020-540d2c9ec62f"
+      "url": "https://blog.aerokube.com/browser-automation-how-an-efficient-selenium-cloud-platform-should-look-like-in-2020-540d2c9ec62f"
     },
     {
       "title": "Moon: the Swiss Army Knife for Browser Automation",
       "description": "This article demonstrates how to run Puppeteer tests in parallel with Moon",
-      "url": "https://aandryashin.medium.com/moon-the-swiss-army-knife-for-browser-automation-7a1382c0702b"
+      "url": "https://blog.aerokube.com/moon-the-swiss-army-knife-for-browser-automation-7a1382c0702b"
     },
     {
       "title": "Playwright: Launching Cross-Browser Automation to the Stars",
       "description": "This article demonstrates how to run Playwright tests in parallel with Moon",
-      "url": "https://medium.com/@aandryashin/playwright-launching-cross-browser-automation-to-the-stars-4a9cca8f0df0"
+      "url": "https://blog.aerokube.com/playwright-launching-cross-browser-automation-to-the-stars-4a9cca8f0df0"
     },
     {
       "title": "Next Mission to Moon",
       "description": "This article describes Moon advanced features: Chrome Developer Tools support, manual testing and many more",
-      "url": "https://medium.com/@aandryashin/next-mission-to-moon-cross-browser-selenium-testing-in-kubernetes-e2721144591a"
+      "url": "https://blog.aerokube.com/next-mission-to-moon-cross-browser-selenium-testing-in-kubernetes-e2721144591a"
     },
     {
       "title": "Selenium: Reflections about Cluster Economics",
       "description": "This article gives our calculations about real Selenium cluster cost in cloud platforms like AWS",
-      "url": "http://medium.com/@aandryashin/selenium-reflections-about-cluster-economics-8a7ce6d6b193"
+      "url": "https://blog.aerokube.com/selenium-reflections-about-cluster-economics-8a7ce6d6b193"
     },
     {
       "title": "Selenium on Windows: Docker Revolution",
       "description": "This article solves the problem of the century - how to pack Windows-only browsers to Linux Docker containers",
-      "url": "https://medium.com/@aandryashin/selenium-on-windows-docker-revolution-f5a7eab205ad"
+      "url": "https://blog.aerokube.com/selenium-on-windows-docker-revolution-f5a7eab205ad"
     },
     {
       "title": "Selenium: Exploring the Moon",
       "description": "A deep dive into Moon architecture, browser pod internals and some advanced features like using Kubernetes node selectors",
-      "url": "http://medium.com/@aandryashin/selenium-exploring-the-moon-b7402936cafe"
+      "url": "https://blog.aerokube.com/selenium-exploring-the-moon-b7402936cafe"
     },
     {
       "title": "Selenium: Storing Data Efficiently",
       "description": "A step by step instruction how to configure Selenoid to upload recorded videos and session logs to S3 bucket",
-      "url": "https://medium.com/@aandryashin/selenium-more-android-sweets-3839148d1bac"
+      "url": "https://blog.aerokube.com/selenium-more-android-sweets-3839148d1bac"
     },
     {
       "title": "Selenium: Back to the Moon",
       "description": "The first introduction of Moon - an implementation of Selenium protocol for Kubernetes cluster",
-      "url": "https://medium.com/@aandryashin/selenium-back-to-the-moon-6ea73f1657cc"
+      "url": "https://blog.aerokube.com/selenium-back-to-the-moon-6ea73f1657cc"
     },
     {
       "title": "Selenium: Clear as a Bell",
       "description": "Take a look if you need to browser consumption charts or session logs uploaded to the ELK stack",
-      "url": "https://medium.com/@aandryashin/selenium-clear-as-a-bell-64b672f42689"
+      "url": "https://blog.aerokube.com/selenium-clear-as-a-bell-64b672f42689"
     },
     {
       "title": "Selenium: Growing Muscles",
       "description": "This article shows some advanced Selenoid and Ggr features like video recording and new capabilities",
-      "url": "https://medium.com/@ivan_krutov/selenium-growing-muscles-9df57ee77a3a"
+      "url": "https://blog.aerokube.com/selenium-growing-muscles-9df57ee77a3a"
     },
     {
       "title": "Selenium: an Apple story",
       "description": "In this article we apply Selenoid power to MacOS platform and testing in Safari desktop",
-      "url": "https://medium.com/@aandryashin/selenium-an-apple-story-ab0c0b68cd35"
+      "url": "https://blog.aerokube.com/selenium-an-apple-story-ab0c0b68cd35"
     },
     {
       "title": "Selenium: easy as a pie",
       "description": "In this article we are showing Selenoid UI and fully automated installer called CM",
-      "url": "https://medium.com/@aandryashin/selenium-easy-as-a-pie-df8b5876b541"
+      "url": "https://blog.aerokube.com/selenium-easy-as-a-pie-df8b5876b541"
     },
     {
       "title": "Selenium on Windows: revisited",
       "description": "Our first recommendations about efficient Selenium testing on Windows platform",
-      "url": "https://medium.com/@aandryashin/selenium-on-windows-revisited-1ab8d51ccc06"
+      "url": "https://blog.aerokube.com/selenium-on-windows-revisited-1ab8d51ccc06"
     },
     {
       "title": "Selenium: done in 60 seconds",
       "description": "In this article we demonstrate how to obtain a running Selenoid instance in 60 seconds",
-      "url": "https://medium.com/@aandryashin/selenium-done-in-60-seconds-176796f8bdc7"
+      "url": "https://blog.aerokube.com/selenium-done-in-60-seconds-176796f8bdc7"
     },
     {
       "title": "Selenium: a new hope (part II)",
@@ -154,7 +159,7 @@
     {
       "title": "Selenium: a new hope (part I)",
       "description": "In this article we describe standard Selenium scalability problems and their efficient solutions",
-      "url": "https://medium.com/@aandryashin/selenium-testing-a-new-hope-7fa87a501ee9"
+      "url": "https://blog.aerokube.com/selenium-testing-a-new-hope-7fa87a501ee9"
     }
   ]
 }
