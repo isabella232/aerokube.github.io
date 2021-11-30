@@ -62,6 +62,11 @@
   ],
   "articles": [
     {
+      "title": "Selenium: Lightning Fast Client Libraries",
+      "description": "This article gives more details on how lightning fast Selenium client should look like.",
+      "url": "https://blog.aerokube.com/selenium-lightning-fast-client-libraries-bc6404414b13"
+    },
+    {
       "title": "Cypress: Remote Tests Execution Made Simple",
       "description": "This article describes how to run your Cypress tests in parallel with Moon.",
       "url": "https://blog.aerokube.com/cypress-remote-tests-execution-made-simple-f17645c2b682"
