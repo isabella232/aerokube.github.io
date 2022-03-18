@@ -5,7 +5,9 @@ title: "Aerokube | Contact Information"
 
 **Aerokube Software OÜ**
 
-**Address:** Harju maakond, Tallinn, Kesklinna linnaosa, Estonia pst 5-309B, 10143, Estonia
+**Address:** Harju maakond, Tallinn, Kesklinna linnaosa, Karu tn 14-8, 10120, Estonia
+
+**VAT number:** EE102171109
 
 **Registry code:** 14653208
 
